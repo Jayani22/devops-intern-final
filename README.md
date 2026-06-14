@@ -1,7 +1,7 @@
 # DevOps Intern Final Assessment
 
-**Name:** Mutcherla Jayani
-**Date:** 14 June 2026
+Name: Mutcherla Jayani
+Date: 14 June 2026
 
 ## Project Overview
 
