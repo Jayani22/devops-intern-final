@@ -1,7 +1,7 @@
 # DevOps Intern Final Assessment
 
-**Name:** Mutcherla Prasad
-**Date:** June 2026
+**Name:** Mutcherla Jayani
+**Date:** 14 June 2026
 
 ## Project Overview
 
@@ -256,6 +256,6 @@ Through this project, I gained hands-on experience with:
 
 ## Author
 
-**Mutcherla Prasad**
+**Mutcherla Jayani*
 
 DevOps Intern Final Assessment - June 2026
