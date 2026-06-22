@@ -37,7 +37,8 @@ devops-intern-final/
 │       └── ci.yml
 │
 ├── nomad/
-│   └── hello.nomad
+|    ├── hello.nomad
+|    |──hello-batch.nomad
 │
 ├── monitoring/
 │   ├── loki_setup.txt
@@ -203,6 +204,11 @@ Check Status:
 ```bash
 nomad job status hello-devops
 ```
+### Service vs Batch Job
+
+The assessment required a service-type Nomad job (`hello.nomad`).
+
+Since the application is a short-lived workload that prints "Hello, DevOps!" and exits successfully, a batch version (`hello-batch.nomad`) has also been included. This demonstrates the more appropriate Nomad job type for workloads that complete and exit rather than running continuously.
 
 ### Deployment Notes
 
