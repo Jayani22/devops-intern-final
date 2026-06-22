@@ -40,7 +40,15 @@ devops-intern-final/
 │   └── hello.nomad
 │
 ├── monitoring/
-│   └── loki_setup.txt
+│   ├── loki_setup.txt
+│   ├── promtail-config.yml
+│   └── README.md
+│
+├── screenshots/
+│   ├── docker-run.png
+│   ├── github-actions-success.png
+│   ├── nomad-node-status.png
+│   └── loki-running.png
 ```
 
 ---
@@ -126,6 +134,23 @@ Expected Output:
 ```text
 Hello, DevOps!
 ```
+## Docker Hub Image
+
+The Docker image was also pushed to Docker Hub.
+
+Image Repository:
+
+```text
+jayani23/hello-devops:latest
+```
+Pull Image:
+```text
+docker pull jayani23/hello-devops:latest
+```
+Run Container:
+```text
+docker run jayani23/hello-devops:latest
+```
 
 ---
 
@@ -144,6 +169,8 @@ Pipeline Tasks:
 * Checkout repository
 * Setup Python environment
 * Execute application
+* Build Docker image
+* Run Docker container
 
 This ensures continuous integration and automatic validation of code changes.
 
@@ -256,6 +283,6 @@ Through this project, I gained hands-on experience with:
 
 ## Author
 
-**Mutcherla Jayani*
+**Mutcherla Jayani**
 
 DevOps Intern Final Assessment - June 2026

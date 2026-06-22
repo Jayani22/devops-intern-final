@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-tests:
+  build-test-push:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,13 @@ jobs:
         run: python hello.py
 
       - name: Build Docker Image
-        run: docker build -t hello-devops .
+        run: docker build -t jayani23/hello-devops:latest .
 
       - name: Run Docker Container
-        run: docker run hello-devops
+        run: docker run jayani23/hello-devops:latest
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      
+      - name: Push Docker Image
+        run: docker push jayani23/hello-devops:latest
